@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "350764629575",
+    "project_id": "commerce-fe056",
+    "storage_bucket": "commerce-fe056.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350764629575:android:36ce1c307b8b80baf5fb62",
+        "android_client_info": {
+          "package_name": "com.somethingprojectthataymade.e_commerce_official_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB32oauyyKk7l7I06JdcPicvfCx0vdCSFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,225 @@
+   /*        StreamBuilder<QuerySnapshot>(
+                            stream: FirebaseFirestore.instance
+                                .collection('children')
+                            .doc("sd")
+
+                                .snapshots(),
+                            builder: (BuildContext context, snapshot) {
+                              if (snapshot.data == null) {
+                                return Center(child: CircularProgressIndicator());
+                              } else {
+                                final List<QueryDocumentSnapshot<Map<String, dynamic>>> docs = snapshot.data!.docs;
+
+                                return ListView.builder(
+                                  itemCount: docs.length,
+                                  itemBuilder: (_, index) {
+                                    final doc = docs[index];
+                                    final childFirstName = doc["childFirstName"];
+                                    final childLastName = doc["childLastName"];
+                                    final points = doc["points"];
+                                    final docID = doc.id;
+
+                                    return ListTile(
+                                      title: Text('$childFirstName $childLastName'),
+                                      subtitle: Text(points),
+                                    );
+                                  },
+                                );
+                              }
+                            },
+                          )
+
+
+
+                          StreamBuilder<QuerySnapshot<Map<String, dynamic>>>( // inside the <> you enter the type of your stream
+                            stream: FirebaseFirestore.instance.collection("products").doc("widget.product_name").snapshots(),
+                            builder: (context,snapshot) {
+                              if (snapshot.hasData) {
+
+
+                                print(snapshot.data.get("urun_adi") + "ddd");
+
+                             return GridView.builder(
+                                  shrinkWrap: true,
+                                  gridDelegate:
+                                  const SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 4,
+                                    crossAxisSpacing: 20,
+                                    childAspectRatio: 0.75,
+                                  ),
+                                  itemBuilder: (context, index) =>
+
+                                      product_widgetdd(id:  snapshot.data!.docs[index].id ,image_url: snapshot.data!.docs[index].get("gorsel_link_first"), urun_adi: snapshot.data!.docs[index].get("urun_adi"),
+                                        urun_fiyat: snapshot.data!.docs[index].get("urun_fiyati"),
+                                      ),
+                                  itemCount: snapshot.data!.docs.length,
+                                );
+                              }
+                              if (snapshot.hasError) {
+                                return const Text('Error');
+                              } else {
+                                return const CircularProgressIndicator();
+                              }
+                            },
+                          ),
+*/
+                         /* Container(
+                            child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+
+
+                                children: [
+
+                                  FittedBox(fit: BoxFit.scaleDown,
+                                    child: Text(
+                                      urun_adi_string ,
+                                      style: TextStyle(
+                                          fontFamily:  'Poppins', fontWeight: FontWeight.w800, fontSize: 15
+                                      ),
+                                    ),
+
+                                  ),
+
+                                  FittedBox(fit: BoxFit.scaleDown,
+                                    child: Text(
+                                      "urun_fiyati_string" + " TL",
+                                      style: TextStyle(
+                                          fontFamily:  'Poppins', fontWeight: FontWeight.w800, fontSize: 15
+                                      ),
+                                    ),
+
+                                  ),
+
+                                  kargo_secenegi(),
+
+
+                                  Padding(
+                                    padding: const EdgeInsets.all(Constants.kPadding),
+                                    child: Container(width: 450, height: 1, color: Constants.white,),
+                                  ),
+
+
+                                  kuponlar(),
+
+                                  SizedBox(height: 75,),
+                                  // Stok durumu
+                                  Container(
+                                    width: 150,
+                                    child: Text("Stokta kalan adet: 1"),
+
+                                  ),
+
+
+
+
+
+                                  SizedBox(height: 150,),
+
+
+                                  // Sepete ekle ve favorilere ekle.
+                                  Row(
+
+                                    children: [
+
+
+
+
+
+                                      Container(
+                                        width: 350,
+                                        height: 50,
+                                        child: OutlinedButton(
+                                          onPressed: () {
+                                            setState(() {
+
+
+                                              Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new sepete_eklendi()));
+                                            });
+
+
+                                          },
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(Constants.kPadding / 2),
+                                            child: Text("Sepete Ekle" , style: TextStyle(fontWeight: FontWeight.w700, fontSize: 20),),
+                                          ),
+                                          style: ButtonStyle(
+                                            backgroundColor: MaterialStateProperty.all(Constants.green),
+                                            shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(0.0))),
+                                          ),
+                                        ),
+                                      ),
+
+                                      SizedBox(width: 50,),
+
+
+
+                                      HoverBuilder(builder: (isHovered) {
+                                        if(!isHovered)
+                                          return CircleAvatar(
+                                              backgroundColor: Constants.white, radius: 20.0,
+                                              child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Image.asset("images/like_icon_not_selected.png"),
+                                              ));
+
+                                        return CircleAvatar(
+                                            backgroundColor: Constants.white, radius: 20.0,
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Image.asset("images/like_icon_selected.png"),
+                                            ));
+
+
+
+
+
+
+                                      },),
+
+
+
+                                    ],
+
+
+
+
+                                  ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                ]),
+                          ),*/
+
+
+
+
+                   /*  Padding(
+                            padding: const EdgeInsets.all(Constants.kPadding),
+                            child: gorsel_row_first(
+                              urun_gorsel_first_string: urun_gorsel_first_string,
+                              urun_gorsel_second_string:  urun_gorsel_second_string,
+                              urun_gorsel_third_string:  urun_gorsel_third_string,
+
+                            ),
+                          ),
+
+
+        */
+
+
+
+                   /*     gorsel_row_second(
+                            urun_adi_string: urun_adi_string,
+                            urun_fiyati_string:  urun_fiyati_string,
+
+                          ),*/
