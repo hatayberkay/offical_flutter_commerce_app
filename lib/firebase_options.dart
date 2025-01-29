@@ -44,7 +44,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyA8E9WKY3TnX1tbc9ryJZDLVax-ccSAfvc',
+    apiKey: 'You need to build your key for using',
     appId: '1:350764629575:web:a8f786bda4bbc2d1f5fb62',
     messagingSenderId: '350764629575',
     projectId: 'commerce-fe056',
@@ -54,7 +54,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB32oauyyKk7l7I06JdcPicvfCx0vdCSFI',
+    apiKey: 'You need to build your key for using',
     appId: '1:350764629575:android:36ce1c307b8b80baf5fb62',
     messagingSenderId: '350764629575',
     projectId: 'commerce-fe056',
@@ -62,7 +62,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAqQ0hagav3YZ8tXIkQQwVRC7aM5A0QSFA',
+    apiKey: 'You need to build your key for using',
     appId: '1:350764629575:ios:ade0c8e1893a5099f5fb62',
     messagingSenderId: '350764629575',
     projectId: 'commerce-fe056',
@@ -71,7 +71,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAqQ0hagav3YZ8tXIkQQwVRC7aM5A0QSFA',
+    apiKey: 'You need to build your key for using',
     appId: '1:350764629575:ios:3c6b7ff84435d79af5fb62',
     messagingSenderId: '350764629575',
     projectId: 'commerce-fe056',
